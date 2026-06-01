@@ -1,4 +1,9 @@
-pyproject.toml
 example ui design
-__pycache__
-.pyc
+__pycache__/
+*.pyc
+*.build/
+*.dist/
+build/
+dist/
+.venv/
+venv/
