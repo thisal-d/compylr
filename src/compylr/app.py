@@ -14,12 +14,12 @@ import os
 import json
 from pathlib import Path
 
-from pyler.theme import DARK, LIGHT, FONTS, get_theme
-from pyler.widgets import (
+from compylr.theme import DARK, LIGHT, FONTS, get_theme
+from compylr.widgets import (
     SectionCard, OptionRow, AnimatedToggle, StyledEntry,
     StyledDropdown, StyledTextArea, PurpleButton, LogTerminal, ScrollableFrame
 )
-from pyler.nuitka_options import NUITKA_SECTIONS, build_nuitka_command
+from compylr.nuitka_options import NUITKA_SECTIONS, build_nuitka_command
 
 SETTINGS_FILE = Path.home() / ".compylr" / "settings.json"
 
