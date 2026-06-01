@@ -29,27 +29,27 @@ Compylr takes the complexity out of compiling Python applications. It provides a
 
 ### 1. Compilation Mode & Output Settings
 
-<img src="readme-assets/1a.png" width="800"/>
+<img width="1479" height="891" alt="1a" src="https://github.com/user-attachments/assets/3b2a39ad-a6c8-4a04-8dad-a588cb75c8f4" />
 
 ### 2. Windows Options & Version Metadata
 
-<img src="readme-assets/2a.png" width="800"/>
+<img width="1479" height="891" alt="2a" src="https://github.com/user-attachments/assets/1a847bd6-daa4-4067-a658-4e019519ead5" />
 
 ### 3. Compiler & Build Options
 
-<img src="readme-assets/3a.png" width="800"/>
+<img width="1479" height="891" alt="3a" src="https://github.com/user-attachments/assets/21abb860-87bd-43bf-8a6e-4d7f281bfee0" />
 
 ### 4. Python Flags & Package Inclusions
 
-<img src="readme-assets/4a.png" width="800"/>
+<img width="1479" height="891" alt="4a" src="https://github.com/user-attachments/assets/3dc8b493-14f8-479f-aa4a-55c511a3a60a" />
 
 ### 5. Plugins & Data Files
 
-<img src="readme-assets/5a.png" width="800"/>
+<img width="1479" height="891" alt="5a" src="https://github.com/user-attachments/assets/002df3ec-e407-4733-87b3-ff4e40af8861" />
 
 ### 6. Compiler Terminal & Live Build
 
-<img src="readme-assets/6a.png" width="800"/>
+<img width="1479" height="891" alt="6a" src="https://github.com/user-attachments/assets/ed3aa189-c9c3-497f-bf7b-e7f19d3c45a3" />
 
 ## 🚀 Installation
 
