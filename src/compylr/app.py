@@ -205,7 +205,6 @@ class CompylrApp:
                 data = json.loads(SETTINGS_FILE.read_text())
                 self._mode = data.get("theme", "dark")
                 self._t = get_theme(self._mode)
-                self._script_var.set(data.get("last_script", ""))
                 self._python_var.set(data.get("last_python", sys.executable))
         except Exception:
             pass
@@ -215,7 +214,6 @@ class CompylrApp:
             SETTINGS_FILE.parent.mkdir(parents=True, exist_ok=True)
             data = {
                 "theme": self._mode,
-                "last_script": self._script_var.get(),
                 "last_python": self._python_var.get(),
             }
             SETTINGS_FILE.write_text(json.dumps(data, indent=2))
