@@ -53,31 +53,23 @@ Compylr takes the complexity out of compiling Python applications. It provides a
 
 ## 🚀 Installation
 
+Install Compylr directly using `pip`:
+
+```bash
+pip install compylr
+```
+
 ### Requirements
 
 - Python 3.8+
-- C Compiler (MinGW64 or MSVC for Windows)
-
-### Setup
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/Thisal-D/compylr.git
-   cd compylr
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+- C Compiler (MinGW64 or MSVC on Windows) — required by Nuitka for compilation.
 
 ## 💻 Usage
 
-Run the application:
+Launch the application directly from your terminal:
 
 ```bash
-python src/compylr/main.py
+compylr
 ```
 
 1. **Select Script**: Browse for the `.py` file you want to compile.
