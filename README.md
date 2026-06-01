@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/62305c41-61ca-4d2f-a0c1-ee6cb79c4b73" alt="Compylr Logo" width="180"/>
+    <img src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/logo.png" alt="Compylr Logo" width="180"/>
 
 # Compylr
 
@@ -29,27 +29,27 @@ Compylr takes the complexity out of compiling Python applications. It provides a
 
 ### 1. Compilation Mode & Output Settings
 
-<img width="1479" height="891" alt="1a" src="https://github.com/user-attachments/assets/3b2a39ad-a6c8-4a04-8dad-a588cb75c8f4" />
+<img alt="1a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/1a.png" />
 
 ### 2. Windows Options & Version Metadata
 
-<img width="1479" height="891" alt="2a" src="https://github.com/user-attachments/assets/1a847bd6-daa4-4067-a658-4e019519ead5" />
+<img alt="2a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/2a.png" />
 
 ### 3. Compiler & Build Options
 
-<img width="1479" height="891" alt="3a" src="https://github.com/user-attachments/assets/21abb860-87bd-43bf-8a6e-4d7f281bfee0" />
+<img alt="3a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/3a.png" />
 
 ### 4. Python Flags & Package Inclusions
 
-<img width="1479" height="891" alt="4a" src="https://github.com/user-attachments/assets/3dc8b493-14f8-479f-aa4a-55c511a3a60a" />
+<img alt="4a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/4a.png" />
 
 ### 5. Plugins & Data Files
 
-<img width="1479" height="891" alt="5a" src="https://github.com/user-attachments/assets/002df3ec-e407-4733-87b3-ff4e40af8861" />
+<img alt="5a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/5a.png" />
 
 ### 6. Compiler Terminal & Live Build
 
-<img width="1479" height="891" alt="6a" src="https://github.com/user-attachments/assets/ed3aa189-c9c3-497f-bf7b-e7f19d3c45a3" />
+<img alt="6a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/6a.png" />
 
 ## 🚀 Installation
 
@@ -118,7 +118,7 @@ Feel free to check the [issues page](https://github.com/Thisal-D/compylr/issues)
 
 ## 📝 License
 
-This project is [MIT](LICENSE) licensed.
+This project is [MIT](https://github.com/Thisal-D/compylr/blob/feature/ui-modernization/LICENSE) licensed.
 
 ---
 
