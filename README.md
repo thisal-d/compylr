@@ -77,7 +77,7 @@ Compylr takes the complexity out of compiling Python applications. It provides a
 Run the application:
 
 ```bash
-python src/pyler/main.py
+python src/compylr/main.py
 ```
 
 1. **Select Script**: Browse for the `.py` file you want to compile.
@@ -90,7 +90,7 @@ python src/pyler/main.py
 ```text
 compylr/
 ├── src/
-│   └── pyler/
+│   └── compylr/
 │       ├── logo/              # Window icon and branding logo assets
 │       │   ├── logo.ico
 │       │   └── logo.png
