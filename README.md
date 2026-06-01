@@ -127,3 +127,9 @@ Feel free to check the [issues page](https://github.com/Thisal-D/compylr/issues)
 ## 📝 License
 
 This project is [MIT](LICENSE) licensed.
+
+---
+
+<div align="center">
+  Made with ❤️ by <a href="https://github.com/Thisal-D">Thisal-D</a>
+</div>
