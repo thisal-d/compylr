@@ -9,3 +9,5 @@ dist/
 venv/
 pyproject.toml
 pypi-readme.md
+*.egg-info/
+src/*.egg-info/
