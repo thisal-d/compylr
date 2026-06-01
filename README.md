@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="readme-assets/logo.png" alt="Compylr Logo" width="180"/>
+  <img src="https://github.com/user-attachments/assets/62305c41-61ca-4d2f-a0c1-ee6cb79c4b73" alt="Compylr Logo" width="180"/>
 
 # Compylr
 
