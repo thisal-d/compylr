@@ -8,3 +8,4 @@ dist/
 .venv/
 venv/
 pyproject.toml
+pypi-readme.md
