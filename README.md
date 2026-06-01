@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="readme-assets/logo.png" alt="Compylr Logo" width="180"/>
+    <img src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/logo.png" alt="Compylr Logo" width="180"/>
 
 # Compylr
 
@@ -29,27 +29,27 @@ Compylr takes the complexity out of compiling Python applications. It provides a
 
 ### 1. Compilation Mode & Output Settings
 
-<img src="readme-assets/1a.png" width="800"/>
+<img alt="1a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/1a.png" />
 
 ### 2. Windows Options & Version Metadata
 
-<img src="readme-assets/2a.png" width="800"/>
+<img alt="2a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/2a.png" />
 
 ### 3. Compiler & Build Options
 
-<img src="readme-assets/3a.png" width="800"/>
+<img alt="3a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/3a.png" />
 
 ### 4. Python Flags & Package Inclusions
 
-<img src="readme-assets/4a.png" width="800"/>
+<img alt="4a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/4a.png" />
 
 ### 5. Plugins & Data Files
 
-<img src="readme-assets/5a.png" width="800"/>
+<img alt="5a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/5a.png" />
 
 ### 6. Compiler Terminal & Live Build
 
-<img src="readme-assets/6a.png" width="800"/>
+<img alt="6a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/6a.png" />
 
 ## 🚀 Installation
 
@@ -118,7 +118,7 @@ Feel free to check the [issues page](https://github.com/Thisal-D/compylr/issues)
 
 ## 📝 License
 
-This project is [MIT](LICENSE) licensed.
+This project is [MIT](https://github.com/Thisal-D/compylr/blob/feature/ui-modernization/LICENSE) licensed.
 
 ---
 
