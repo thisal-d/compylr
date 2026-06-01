@@ -131,5 +131,5 @@ This project is [MIT](LICENSE) licensed.
 ---
 
 <div align="center">
-  Made with ❤️ by <a href="https://github.com/Thisal-D">Thisal-D</a>
+  Made with ❤️ by <a href="https://github.com/Thisal-D">Thisal</a>
 </div>
