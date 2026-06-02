@@ -138,7 +138,7 @@ NUITKA_SECTIONS = [
     # ── 4. Version / Metadata ────────────────────────────────────────────
     {
         "title": "Version & Metadata",
-        "icon": "🏷️",
+        "icon": "🏷",
         "options": [
             NuitkaOption(
                 key="product_name",
