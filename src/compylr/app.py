@@ -7,6 +7,7 @@ import tkinter as tk
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 import threading
+import webbrowser
 import subprocess
 import shutil
 import sys
@@ -19,7 +20,7 @@ from compylr.widgets import (
     SectionCard, OptionRow, AnimatedToggle, StyledEntry,
     StyledDropdown, StyledTextArea, PurpleButton, LogTerminal, ScrollableFrame
 )
-from compylr.nuitka_options import NUITKA_SECTIONS, build_nuitka_command
+from compylr.nuitka import NUITKA_SECTIONS, build_nuitka_command
 
 SETTINGS_FILE = Path.home() / ".compylr" / "settings.json"
 
@@ -308,6 +309,65 @@ class CompylrApp:
             lbl.bind("<Leave>", lambda e, l=lbl, ii=idx: self._nav_leave(l, ii))
             lbl.bind("<Button-1>", lambda e, ii=idx: self._nav_select(ii))
             self._nav_btns.append(lbl)
+
+        self._build_sidebar_footer()
+
+    def _build_sidebar_footer(self):
+        """Slim GitHub open-source footer pinned to the bottom of the sidebar."""
+        t = self._t
+        REPO_URL = "https://github.com/thisal-d/compylr"
+
+        footer = ctk.CTkFrame(
+            self._sidebar,
+            fg_color=t["bg_header"],
+            corner_radius=0,
+        )
+        footer.pack(side="bottom", fill="x")
+
+        # Top separator line
+        sep = ctk.CTkFrame(footer, fg_color=t["border"], height=1, corner_radius=0)
+        sep.pack(fill="x")
+
+        inner = ctk.CTkFrame(footer, fg_color="transparent")
+        inner.pack(fill="x", padx=14, pady=(8, 10))
+
+        # Header row: star icon + label
+        header_row = ctk.CTkFrame(inner, fg_color="transparent")
+        header_row.pack(fill="x", pady=(0, 3))
+        ctk.CTkLabel(
+            header_row,
+            text="⭐  Open Source",
+            font=("Segoe UI", 11, "bold"),
+            text_color=t["text_accent"],
+            anchor="w",
+        ).pack(side="left")
+
+        # Subtitle
+        ctk.CTkLabel(
+            inner,
+            text="Star the repo to support development.",
+            font=("Segoe UI", 10),
+            text_color=t["text_dim"],
+            anchor="w",
+            wraplength=190,
+            justify="left",
+        ).pack(fill="x", pady=(0, 6))
+
+        # View Repository button
+        repo_btn = ctk.CTkButton(
+            inner,
+            text="⤴  View on GitHub",
+            font=("Segoe UI", 11, "bold"),
+            fg_color=t["bg_active"],
+            text_color=t["text_accent"],
+            hover_color=t["bg_hover"],
+            corner_radius=6,
+            height=28,
+            border_width=1,
+            border_color=t["border_card"],
+            command=lambda: webbrowser.open(REPO_URL),
+        )
+        repo_btn.pack(fill="x")
 
     def _nav_leave(self, lbl, idx):
         t = self._t
