@@ -12,70 +12,60 @@ _A modern, powerful, and intuitive GUI for transforming Python scripts into stan
 
 </div>
 
-## 📌 Overview
+---
 
-Compylr takes the complexity out of compiling Python applications. It provides a sleek, modern user interface built with CustomTkinter that lets you configure Nuitka's powerful compilation options visually. No more memorizing long command-line flags — just point, click, and build.
+Stop memorizing Nuitka flags. **Compylr** gives you a clean, modern interface to configure, preview, and run your Python-to-EXE builds — visually. Just point, click, and ship.
 
-## ✨ Features
+## 🚀 Quick Start
 
-- **Modern & Responsive UI**: Fully redesigned using CustomTkinter with dark and light mode support.
-- **Visual Configuration**: Configure build modes, output settings, windows options, metadata, and data files through an intuitive sidebar menu.
-- **Live Command Preview**: See the exact Nuitka command being generated in real-time.
-- **Integrated Terminal**: View color-coded compilation progress, warnings, and errors directly inside the app.
-- **Smart Troubleshooting**: Automatically suggests fixes for common compilation errors (e.g., corrupted caches, missing modules).
-- **Clean Build Support**: One-click option to safely clean old `.build` and `.dist` directories before recompiling.
-
-## 📸 Screenshots
-
-### 1. Compilation Mode & Output Settings
-
-<img alt="1a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/1a.png" />
-
-### 2. Windows Options & Version Metadata
-
-<img alt="2a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/2a.png" />
-
-### 3. Compiler & Build Options
-
-<img alt="3a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/3a.png" />
-
-### 4. Python Flags & Package Inclusions
-
-<img alt="4a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/4a.png" />
-
-### 5. Plugins & Data Files
-
-<img alt="5a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/5a.png" />
-
-### 6. Compiler Terminal & Live Build
-
-<img alt="6a" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/6a.png" />
-
-## 🚀 Installation
-
-Install Compylr directly using `pip`:
-
+**Install:**
 ```bash
 pip install compylr
 ```
 
-### Requirements
-
-- Python 3.8+
-- C Compiler (MinGW64 or MSVC on Windows) — required by Nuitka for compilation.
-
-## 💻 Usage
-
-Launch the application directly from your terminal:
-
+**Run:**
 ```bash
 compylr
 ```
 
-1. **Select Script**: Browse for the `.py` file you want to compile.
-2. **Select Interpreter**: (Optional) Pick a specific Python executable to run Nuitka.
-3. **Configure Options**: Navigate through the sidebar sections (Compilation Mode, Windows Options, Plugins, etc.) to set your desired flags.
-4. **Build**: Go to the **Build** section and click `🚀 Build Executable`.
+> **Requirements:** Python 3.8+ and a C compiler (MSVC or MinGW64 on Windows) for Nuitka to work.
+
+---
+
+## ✨ What You Get
+
+| Feature | Description |
+|---|---|
+| 🎨 **Modern UI** | Built with CustomTkinter — supports dark & light mode out of the box |
+| 🖱 **Visual Configuration** | Every Nuitka flag exposed as a clean GUI control — no CLI needed |
+| 👁 **Live Command Preview** | See the exact Nuitka command generated as you configure |
+| 🖥 **Integrated Terminal** | Color-coded build output with warnings, errors, and progress |
+| 🧠 **Smart Hints** | Automatically diagnoses common build failures and suggests fixes |
+| 🧹 **Clean Build** | One-click wipe of stale `.build` / `.dist` directories before a fresh compile |
+
+---
+
+## 📸 Screenshots
+
+### Compilation Mode & Output Settings
+<img alt="Compilation Mode" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/1a.png" />
+
+### Windows Options & Version Metadata
+<img alt="Windows Options" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/2a.png" />
+
+### Compiler & Build Options
+<img alt="Compiler Options" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/3a.png" />
+
+### Python Flags & Package Inclusions
+<img alt="Python Flags" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/4a.png" />
+
+### Plugins & Data Files
+<img alt="Plugins" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/5a.png" />
+
+### Live Build Terminal
+<img alt="Build Terminal" src="https://raw.githubusercontent.com/Thisal-D/compylr/feature/ui-modernization/readme-assets/6a.png" />
+
+---
 
 ## 📁 Project Structure
 
@@ -83,42 +73,42 @@ compylr
 compylr/
 ├── src/
 │   └── compylr/
-│       ├── logo/              # Window icon and branding logo assets
+│       ├── logo/              # Window icon and branding assets
 │       │   ├── logo.ico
 │       │   └── logo.png
 │       ├── __init__.py
-│       ├── main.py            # Application entry point
-│       ├── app.py             # Main CustomTkinter application and layout
-│       ├── widgets.py         # Custom reusable UI components
-│       ├── theme.py           # Color palettes and font definitions
-│       └── nuitka_options.py  # Definition of all Nuitka flags and groups
-├── readme-assets/             # Screenshots and README header logo assets
-├── requirements.txt           # Python dependencies
-├── pyproject.toml             # Pyproject settings metadata
-├── LICENSE                    # MIT License file
-└── README.md                  # This file
+│       ├── main.py            # Entry point
+│       ├── app.py             # Main application window
+│       ├── widgets.py         # Reusable UI components
+│       ├── theme.py           # Color palettes & font tokens
+│       └── nuitka_options.py  # All Nuitka flags & section definitions
+├── readme-assets/             # Screenshots and logo for README
+├── requirements.txt
+├── pyproject.toml
+├── LICENSE
+└── README.md
 ```
 
-## 🛠 Technologies Used
+## 🛠 Built With
 
-- **[Python](https://www.python.org/)** - Core programming language
-- **[CustomTkinter](https://customtkinter.tomschimansky.com/)** - Modern UI framework
-- **[Nuitka](https://nuitka.net/)** - The Python compiler
+- **[Python](https://www.python.org/)** — Core language
+- **[CustomTkinter](https://customtkinter.tomschimansky.com/)** — Modern UI framework
+- **[Nuitka](https://nuitka.net/)** — Python-to-native compiler
 
-## 🔮 Future Improvements
+## 🔮 Roadmap
 
-- Profile management (save and load compilation profiles for different projects).
-- Direct compilation to macOS and Linux formats (when supported on host).
-- Integrated dependency analyzer.
+- [ ] Save & load compilation profiles per project
+- [ ] macOS / Linux build support (when Nuitka adds it)
+- [ ] Integrated dependency analyzer
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/Thisal-D/compylr/issues).
+Check the [issues page](https://github.com/Thisal-D/compylr/issues) to get started.
 
 ## 📝 License
 
-This project is [MIT](https://github.com/Thisal-D/compylr/blob/feature/ui-modernization/LICENSE) licensed.
+[MIT](https://github.com/Thisal-D/compylr/blob/feature/ui-modernization/LICENSE) — do whatever you want with it.
 
 ---
 
