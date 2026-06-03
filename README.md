@@ -10,9 +10,9 @@ _A modern, powerful, and intuitive GUI for transforming Python scripts into stan
 ![Nuitka](https://img.shields.io/badge/Compiler-Nuitka-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-gray)
 
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/compylr?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=Downloads)](https://pepy.tech/projects/compylr)
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/compylr?period=month&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=Downloads/Month)](https://pepy.tech/projects/compylr)
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/compylr?period=week&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=Downloads/week)](https://pepy.tech/projects/compylr)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/compylr?period=total&units=INTERNATIONAL_SYSTEM&left_color=blue&right_color=green&left_text=Downloads/All)](https://pepy.tech/projects/compylr)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/compylr?period=month&units=INTERNATIONAL_SYSTEM&left_color=blue&right_color=green&left_text=Downloads/Month)](https://pepy.tech/projects/compylr)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/compylr?period=week&units=INTERNATIONAL_SYSTEM&left_color=blue&right_color=green&left_text=Downloads/week)](https://pepy.tech/projects/compylr)
 
 </div>
 
