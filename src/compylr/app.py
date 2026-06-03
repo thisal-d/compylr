@@ -336,7 +336,14 @@ class CompylrApp:
         header_row.pack(fill="x", pady=(0, 3))
         ctk.CTkLabel(
             header_row,
-            text="⭐  Open Source",
+            text="⭐",
+            font=("Segoe UI", 11),
+            text_color=t.get("warning", "#F59E0B"),
+            anchor="w",
+        ).pack(side="left", padx=(0, 4))
+        ctk.CTkLabel(
+            header_row,
+            text="Open Source",
             font=("Segoe UI", 11, "bold"),
             text_color=t["text_accent"],
             anchor="w",
@@ -347,7 +354,7 @@ class CompylrApp:
             inner,
             text="Star the repo to support development.",
             font=("Segoe UI", 10),
-            text_color=t["text_dim"],
+            text_color=t["text_muted"],
             anchor="w",
             wraplength=190,
             justify="left",
