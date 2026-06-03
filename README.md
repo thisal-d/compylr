@@ -90,12 +90,12 @@ compylr/
 │       ├── logo/              # Window icon and branding assets
 │       │   ├── logo.ico
 │       │   └── logo.png
+│       ├── nuitka/            # Nuitka compiler logic and options
+│       ├── theme/             # Color palettes and font tokens
+│       ├── widgets/           # Reusable UI components
 │       ├── __init__.py
 │       ├── main.py            # Entry point
-│       ├── app.py             # Main application window
-│       ├── widgets.py         # Reusable UI components
-│       ├── theme.py           # Color palettes & font tokens
-│       └── nuitka_options.py  # All Nuitka flags & section definitions
+│       └── app.py             # Main application window
 ├── readme-assets/             # Screenshots and logo for README
 ├── requirements.txt
 ├── pyproject.toml
