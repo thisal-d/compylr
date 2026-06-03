@@ -5,6 +5,8 @@
 
 _A modern, powerful, and intuitive GUI for transforming Python scripts into standalone executables using Nuitka._
 
+[![PyPI version](https://badge.fury.io/py/compylr.svg)](https://pypi.org/project/compylr/)
+
 ![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-blueviolet)
 ![Nuitka](https://img.shields.io/badge/Compiler-Nuitka-brightgreen)
