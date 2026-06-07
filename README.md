@@ -36,7 +36,18 @@ pip install compylr
 compylr
 ```
 
-> **Requirements:** Python 3.8+ and a C compiler (MSVC or MinGW64 on Windows) for Nuitka to work.
+> **Requirements:** Python 3.8+ and a C compiler for Nuitka to work. Supported backends on Windows: **MSVC** (Visual Studio C++ tools), **MinGW64**, **Clang** (from Visual Studio), and **Zig**.
+
+---
+
+## 📖 How to Use
+
+1. **Select Target & Environment:** At the top of any page, select the Python script you want to compile and the Python interpreter to run it with.
+2. **Configure Build Settings:** Navigate through the sidebar sections (Compilation Mode, Output Settings, Windows Options, version metadata, Python flags, package inclusions, and plugins) to customize your build.
+3. **Manage Config Profiles:**
+   * **Export:** Click **💾 Export Config** on the **Build** page to save your setup as a `.comphylr` file.
+   * **Load:** Click **📂 Load Config** on the **Build** page to restore all settings from a saved profile instantly.
+4. **Compile:** In the **Build** page, click **🚀 Build Executable** to begin. The integrated terminal will stream and filter Nuitka's compilation logs in real time.
 
 ---
 
@@ -50,6 +61,7 @@ compylr
 | 🖥 **Integrated Terminal**  | Color-coded build output with warnings, errors, and progress                  |
 | 🧠 **Smart Hints**          | Automatically diagnoses common build failures and suggests fixes              |
 | 🧹 **Clean Build**          | One-click wipe of stale `.build` / `.dist` directories before a fresh compile |
+| 💾 **Config Profiles**      | Export all settings to a `.comphylr` file and reload them instantly on any project |
 
 ---
 
@@ -111,7 +123,6 @@ compylr/
 
 ## 🔮 Roadmap
 
-- [ ] Save & load compilation profiles per project
 - [ ] macOS / Linux build support (when Nuitka adds it)
 - [ ] Integrated dependency analyzer
 
