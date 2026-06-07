@@ -571,6 +571,10 @@ class CompylrApp:
 
         PurpleButton(btn_bar, "📋  Copy Command", t,
                      command=self._copy_command, style="secondary").pack(side="left", padx=(0, 8))
+        PurpleButton(btn_bar, "💾  Export Config", t,
+                     command=self._export_config, style="secondary").pack(side="left", padx=(0, 8))
+        PurpleButton(btn_bar, "📂  Load Config", t,
+                     command=self._import_config, style="secondary").pack(side="left", padx=(0, 8))
         PurpleButton(btn_bar, "🗑  Clear Log", t,
                      command=lambda: self._log.clear(), style="ghost").pack(side="left")
 
@@ -647,6 +651,82 @@ class CompylrApp:
         self.root.clipboard_clear()
         self.root.clipboard_append(self._cmd_preview.get("1.0", "end").strip())
         self._log.write("Command copied to clipboard.", "info")
+
+    # ── Config export / import (.comphylr) ────────────────────────────────
+    def _export_config(self):
+        """Serialize all current GUI settings to a .comphylr JSON file."""
+        dest = filedialog.asksaveasfilename(
+            title="Export Build Settings",
+            defaultextension=".comphylr",
+            filetypes=[("Compylr Config", "*.comphylr"), ("All Files", "*.*")],
+        )
+        if not dest:
+            return  # user cancelled
+
+        # Build the payload
+        data = {
+            "version": 1,
+            "script": self._script_var.get(),
+            "python": self._python_var.get(),
+            "options": self._collect_options(),
+        }
+
+        try:
+            Path(dest).write_text(json.dumps(data, indent=2), encoding="utf-8")
+            self._log.write(f"💾  Config exported → {dest}", "success")
+            self._set_status("Config exported.", "success")
+        except Exception as exc:
+            messagebox.showerror("Compylr — Export Failed", str(exc))
+            self._log.write(f"❌  Export failed: {exc}", "error")
+
+    def _import_config(self):
+        """Load a .comphylr file and restore all GUI settings from it."""
+        src = filedialog.askopenfilename(
+            title="Load Build Settings",
+            filetypes=[("Compylr Config", "*.comphylr"), ("All Files", "*.*")],
+        )
+        if not src:
+            return  # user cancelled
+
+        try:
+            data = json.loads(Path(src).read_text(encoding="utf-8"))
+        except Exception as exc:
+            messagebox.showerror("Compylr — Load Failed",
+                                 f"Could not parse config file:\n{exc}")
+            return
+
+        version = data.get("version", 1)
+        if version > 1:
+            messagebox.showwarning(
+                "Compylr — Version Mismatch",
+                f"This config was created by a newer version of Compylr (v{version}).\n"
+                "Settings will be applied as-is; some options may be ignored.",
+            )
+
+        # Restore top-level paths
+        if "script" in data and data["script"]:
+            self._script_var.set(data["script"])
+        if "python" in data and data["python"]:
+            self._python_var.set(data["python"])
+
+        # Restore per-option values
+        options = data.get("options", {})
+        for key, val in options.items():
+            var = self._option_vars.get(key)
+            widget = self._ctrl_widgets.get(key)
+            try:
+                if isinstance(widget, StyledTextArea):
+                    widget.set_value(str(val) if val is not None else "")
+                elif isinstance(var, tk.BooleanVar):
+                    var.set(bool(val))
+                elif isinstance(var, tk.StringVar):
+                    var.set(str(val) if val is not None else "")
+            except Exception:
+                pass  # skip unknown / incompatible keys silently
+
+        self._refresh_preview()
+        self._log.write(f"📂  Config loaded ← {src}", "info")
+        self._set_status("Config loaded.", "success")
 
     # ── Build logic ────────────────────────────────────────────────────
     def _clean_build_dir(self, script: str):
